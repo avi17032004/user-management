@@ -1,0 +1,194 @@
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.user-list-container {
+  max-width: 800px;
+  margin: 20px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.user-list-container h2 {
+  text-align: center;
+  color: #333;
+}
+
+/* User cards */
+.user-card {
+  display: flex;
+  align-items: center;
+  color: white !important;
+  justify-content: space-between;
+  background: linear-gradient(135deg, #8b3ddd, #2575fc);
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.user-card img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.user-info {
+  flex-grow: 1;
+}
+
+.user-info p {
+  margin: 5px 0;
+  color: white;
+}
+
+button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.edit-btn {
+  margin-left: 20px;
+  background-color: rgb(23, 194, 194);
+  color: white;
+}
+
+.edit-btn:hover {
+  background-color: rgb(13, 161, 161);
+}
+
+.delete-btn {
+  background-color: #dc3545;
+  color: white;
+  margin-left: 10px;
+}
+
+.delete-btn:hover {
+  background-color: #a71d2a;
+}
+
+/* Edit form */
+.edit-form {
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 10px 20px;
+}
+
+.edit-form input {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.edit-form button {
+  margin-left: 18px;
+  width: 40%;
+  margin-top: 10px;
+}
+
+button[type="submit"] {
+  background-color: #8b3ddd;
+  color: white;
+}
+
+button[type="button"] {
+  background-color: #dd3d3d;
+  color: white;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  padding: 10px 15px;
+  background: #007bff;
+  color: white;
+  margin: 0 5px;
+}
+
+.pagination button:hover {
+  background: #0056b3;
+}
+
+.pagination button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+/* Mobile responsiveness at 480px and 768px */
+
+@media (max-width: 768px) {
+  .user-list-container {
+    width: 90%;
+    padding: 15px;
+  }
+  .user-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .edit-btn,
+  .delete-btn {
+    margin: auto;
+    width: 20%;
+    margin-top: 8px;
+  }
+
+  .edit-form {
+    width: 70%;
+  }
+
+  .edit-form input {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .user-list-container {
+    width: 90%;
+    padding: 10px;
+  }
+  .user-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+  }
+  .user-card img {
+    margin-bottom: 10px;
+  }
+  .edit-btn,
+  .delete-btn {
+    margin: auto;
+    width: 20%;
+    margin-top: 8px;
+  }
+
+  .edit-form {
+    width: 90%;
+  }
+
+  .pagination button {
+    width: 30%;
+    margin-top: 5px;
+  }
+}

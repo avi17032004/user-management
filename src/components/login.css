@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap");
+
+.login-container {
+  font-family: "Inter", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #4b6cb7, #182848);
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.login-box {
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 350px;
+  transform: scale(0.8);
+  animation: scaleIn 0.5s forwards;
+}
+
+.login-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+}
+
+.input-field:focus {
+  border-color: #4b6cb7;
+  box-shadow: 0 0 5px rgba(75, 108, 183, 0.5);
+}
+
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background: #4b6cb7 !important;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.login-btn:hover {
+  background: #122b5f !important;
+  transform: scale(1.05);
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0.8);
+  }
+  to {
+    transform: scale(1);
+  }
+}
