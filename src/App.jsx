@@ -9,7 +9,7 @@ function App() {
   const [searchQuery, setSearchQuery] = useState("");
 
   return (
-    <Router>
+    <Router basename={import.meta.env.BASE_URL}>
       <Header setSearchQuery={setSearchQuery} />
       <Routes>
         <Route path="/login" element={<Login />} />
