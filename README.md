@@ -19,8 +19,8 @@ This is a React-based User Management application that allows users to view, sea
 ### 1️⃣ Clone the repository
 
 ```sh
-git clone https://github.com/avi17032004/User-Management-App.git
-cd YOUR_REPOSITORY_NAME
+git clone https://github.com/avi17032004/user-management.git
+cd user-management-main
 ```
 
 ### 2️⃣ Install dependencies
