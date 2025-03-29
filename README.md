@@ -12,7 +12,7 @@ This is a React-based User Management application that allows users to view, sea
 
 ## 🌍 Live Demo
 
-🔗 [Check out the live demo here](YOUR_DEPLOYED_URL)
+🔗 [Check out the live demo here](https://avi17032004.github.io/user-management/)
 
 ## 🛠️ Installation
 
